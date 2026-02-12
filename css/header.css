@@ -14,11 +14,11 @@ header {
   height: 64px;
 }
 
-.logoMobile {
+.imgMobile {
   display: block;
 }
 
-.logoDesktop {
+.imgDesktop {
   display: none;
 }
 
