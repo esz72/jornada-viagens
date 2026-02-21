@@ -6,12 +6,15 @@
   box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
+  background-color: black;
 }
 
 .card header {
   display: block;
   background-color: transparent;
   position: static;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .card header p {
@@ -21,7 +24,7 @@
 
 .card header h3 {
     font-size: 40px;
-    font-weight: var(--title-weight);
+    font-weight: var(--titles-weight);
     margin: 8px 0 0;
 }
 
