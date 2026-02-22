@@ -1,3 +1,31 @@
 .section-title.searchfor {
-    margin-top: 88px;
+  margin-top: 88px;
 }
+
+.categories-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.search {
+  background-color: var(--background-secundary-color);
+  width: 312px;
+  height: 220px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.search a {
+    text-decoration: none;
+    color: var(--text-primary-colo);
+    font-size: 24px;
+    font-weight: var(--titles-weight);
+}
+
+.search img {
+  padding: 41px 0 24px 0;
+}
+
