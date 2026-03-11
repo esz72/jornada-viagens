@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -8,21 +8,20 @@ header {
   position: relative;
 }
 
-.logoJornada {
+.logo {
   display: inline-block;
   width: 68px;
   height: 64px;
 }
 
-.imgMobile {
+.img-mobile {
   display: block;
 }
 
-.imgDesktop {
+.img-desktop {
   display: none;
 }
-
-.navigation {
+.navigation-menu {
   margin-top: 24px;
 }
 
@@ -39,72 +38,67 @@ nav {
   display: none;
 }
 
-.listLinks {
+.list-links {
   list-style: none;
 }
 
-.listLinks li {
+.list-links li {
   margin: 16px 0;
 }
-
-.listLinks li a {
+.list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
 }
+.list-links li a.active {
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 768px) {
-  .navigation {
+  .navigation-menu {
     margin-top: 0;
     width: 467px;
   }
-
-  .navigation label {
+  .navigation-menu label {
     display: none;
   }
 
-  .navigation nav {
+  .navigation-menu nav {
     display: block;
   }
-
-  .navigation ul {
+  .navigation-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-
-  .navigation li {
+  .navigation-menu li {
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header {
+  .main-header {
     padding: 38px 120px;
   }
-
-  .logoJornada {
+  .logo {
     width: 260px;
     height: 64px;
   }
-
-  .imgDesktop {
+  .img-desktop {
     display: block;
   }
-
-  .imgMobile {
+  .img-mobile {
     display: none;
   }
-
-  .navigation a:hover {
-    color: var(--decoration-primary-color);
+  .navigation-menu a:hover {
+    color: var(--primary-color);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
   }
 }
