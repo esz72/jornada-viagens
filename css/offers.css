@@ -1,101 +1,86 @@
 .offers {
-    margin-bottom: 104px;
+  margin-bottom: 104px;
 }
-
-.offer-cards {
+.offers-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.offer-cards .card {
+.offers-cards .card {
   color: var(--text-secondary-color);
   width: 312px;
   height: 288px;
-  padding: 24px 16px;
   box-sizing: border-box;
+  padding: 24px 16px;
   border-radius: 16px;
   text-align: center;
 }
-
-.offer-cards .card header {
-  display: block;
-  background-color: transparent;
-  position: static;
-  padding: 0;
+.offers-cards .card header {
   margin-bottom: 24px;
 }
 
-.offer-cards .card header p {
+.offers-cards .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.offer-cards .card header h3 {
+.offers-cards .card header h3 {
   font-size: 40px;
-  font-weight: var(--titles-weight);
+  font-weight: var(--title-weight);
   margin: 8px 0 0;
 }
-
-.offer-cards .card header span {
+.offers-cards .card header span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
 }
 
-.offer-cards .card.japao {
-  background: url(../img/bg-card-japao.jpg);
+.offers-cards .card.japao {
+  background: url(../img/bg-card-japao.jpg) no-repeat;
   background-size: cover;
 }
-
-.offer-cards .card.san-andreas {
-  background: url(../img/bg-card-san-andreas.jpg);
+.offers-cards .card.san-andreas {
+  background: url(../img/bg-card-san-andreas.jpg) no-repeat;
   background-size: cover;
 }
-
-.offer-cards .card.paraiba {
-  background: url(../img/bg-card-paraiba.jpg);
+.offers-cards .card.paraiba {
+  background: url(../img/bg-card-paraiba.jpg) no-repeat;
   background-size: cover;
 }
-
-.offer-cards .card.manaus {
-  background: url(../img/bg-card-manaus.jpg);
+.offers-cards .card.manaus {
+  background: url(../img/bg-card-manaus.jpg) no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .offer-cards {
+  .offers-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-
 @media screen and (min-width: 1024px) {
-  .offer-cards .card {
+  .offers-cards .card {
     width: 420px;
     height: 308px;
   }
-
-  .offer-cards .card header h3 {
+  .offers-cards .card header h3 {
     font-size: 48px;
   }
-
-  .offer-cards .card header span {
+  .offers-cards .card header span {
     font-size: 40px;
   }
 }
-
 @media screen and (min-width: 1440px) {
-  .offer-cards .card {
+  .offers-cards .card {
     width: 588px;
-    height: 308px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .offer-cards {
+  .offers-cards {
     width: 1250px;
     margin: 0 auto;
   }
